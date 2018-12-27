@@ -1,0 +1,105 @@
+@import "_mixin.scss";
+@import "common.scss";
+.wrap {
+    @include num(100%, 100%);
+    @include box_flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    @include num(100%, rem(44px));
+    @include flexs;
+    padding: 0 rem(10px);
+    @include sizing;
+    .icon {
+        font-size: rem(16px);
+    }
+    span {
+        font-size: rem(14px);
+    }
+}
+
+section {
+    flex: 1;
+    @include box_flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.top {
+    @include num(100%, rem(44px));
+    background-color: #eee;
+    line-height: rem(44px);
+    padding: 0 rem(10px);
+    @include sizing;
+    b {
+        @include cir(rem(20px));
+        background: #fff;
+        vertical-align: middle;
+        border: 1px solid #ccc;
+    }
+    span {
+        margin-left: rem(8px);
+    }
+}
+
+.title {
+    @include flexs;
+    padding: rem(10px);
+    @include sizing;
+    border-bottom: 1px solid #ccc;
+    span {
+        color: #f50;
+    }
+    .icon {
+        font-size: rem(16px);
+    }
+}
+
+.all {
+    @include num(100%, auto);
+    @include box_flex;
+    flex-direction: column;
+    padding: rem(10px);
+    @include sizing;
+    dl {
+        @include num(100%, auto);
+        @include box_flex;
+        dt {
+            flex: 3;
+            img {
+                @include num(100%, auto);
+            }
+        }
+        dd {
+            margin-left: rem(5px);
+            flex: 7;
+            @include box_flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h1 {
+                font-size: rem(14px);
+            }
+            .money {
+                @include flexs;
+                b {
+                    color: #f50;
+                    font-size: rem(14px);
+                }
+                p {
+                    span {
+                        font-size: rem(14px);
+                    }
+                    .add,
+                    .odd {
+                        padding: rem(5px) rem(15px);
+                        @include sizing;
+                        border: 1px solid #ccc;
+                        font-size: rem(16px);
+                    }
+                }
+            }
+        }
+    }
+}

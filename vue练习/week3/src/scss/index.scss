@@ -1,0 +1,99 @@
+@import "_mixin.scss";
+@import "common.scss";
+#app {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    flex-direction: column;
+    overflow: hidden;
+    @include num(100%, 100%);
+    @include box_flex;
+}
+
+header {
+    @include num(100%, rem(44px));
+    background: skyblue;
+    color: #fff;
+    font-size: rem(16px);
+    text-align: center;
+    line-height: rem(44px);
+}
+
+section {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.el-checkbox__label {
+    width: rem(30px);
+    height: rem(30px);
+}
+
+.all {
+    @include num(100%, auto);
+    @include box_flex;
+    flex-direction: column;
+    dl {
+        padding: 0 rem(10px);
+        @include sizing;
+        @include num(100%, auto);
+        @include box_flex;
+        border-bottom: 1px solid #ccc;
+        dt {
+            flex: 3;
+            img {
+                @include num(100%, auto);
+            }
+        }
+        dd {
+            margin-left: rem(10px);
+            flex: 7;
+            @include box_flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: rem(10px) 0;
+            h3 {
+                font-size: rem(16px);
+                font-weight: 800;
+            }
+            h2 {
+                color: #ccc;
+            }
+            h1 {
+                color: #f50;
+                font-size: rem(14px);
+            }
+            div {
+                @include flexs;
+                span {
+                    @include num(rem(20px), rem(10px));
+                    text-align: center;
+                    line-height: rem(10px);
+                    font-size: rem(14px);
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    @include num(rem(100px), rem(30px));
+    span {
+        font-size: rem(16px);
+    }
+}
+
+footer {
+    @include num(100%, rem(44px));
+    @include flexs;
+    padding: 0 rem(10px);
+    @include sizing;
+    font-size: rem(16px);
+    .el-badge__content {
+        @include num(rem(20px), rem(20px));
+        font-size: rem(12px);
+        line-height: rem(20px);
+    }
+}

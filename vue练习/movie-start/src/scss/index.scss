@@ -1,0 +1,99 @@
+@import "_mixin.scss";
+@import "common.scss";
+#app {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    @include num(100%, 100%);
+    overflow: hidden;
+    @include box_flex;
+    flex-direction: column;
+}
+
+header {
+    @include num(100%, rem(44px));
+    @include flexs;
+    border-bottom: 1px solid #000;
+    background: #eee;
+    a {
+        color: skyblue;
+        border: rem(1px) solid skyblue;
+        padding: rem(8px) rem(10px);
+        float: left;
+        &:nth-of-type(1) {
+            background: skyblue;
+            color: #fff;
+            border-radius: rem(5px) 0 0 rem(5px);
+        }
+        &:nth-of-type(4) {
+            border-radius: 0 rem(5px) rem(5px) 0;
+        }
+    }
+}
+
+section {
+    flex: 1;
+    overflow-y: auto;
+    @include box_flex;
+    flex-direction: column;
+}
+
+.top {
+    @include num(100%, rem(44px));
+    @include flexs;
+    padding: 0 rem(15px);
+    @include sizing;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    top: rem(44px);
+    z-index: 999;
+    @include num(100%, auto);
+    left: 0;
+    li {
+        @include sizing;
+        @include num(100%, rem(44px));
+        line-height: rem(44px);
+        background: #fff;
+        text-indent: rem(4px);
+        border: 1px solid #ccc;
+    }
+}
+
+.alls {
+    @include num(100%, auto);
+    padding: 0 rem(10px);
+    @include sizing;
+    .all {
+        @include num(100%, auto);
+        border-bottom: 1px solid #ccc;
+        padding: rem(10px) 0;
+        .name {
+            @include num(100%, auto);
+            @include flexs;
+            line-height: 2;
+            span {
+                font-size: rem(16px);
+            }
+        }
+        .money {
+            @include num(100%, auto);
+            @include flexs;
+            line-height: 2;
+            span {
+                font-size: rem(16px);
+                color: skyblue;
+            }
+            p {
+                b {
+                    border: 1px solid skyblue;
+                    padding: rem(3px) rem(7px);
+                }
+            }
+        }
+    }
+}

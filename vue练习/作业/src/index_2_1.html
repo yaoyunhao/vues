@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function getName() {
+        //     return 'tom';
+        //     console.log('num');
+        // }
+        // console.log(getName())
+
+
+        // function* getName() {
+        //     yield 'tom';
+        //     yield 'num';
+        //     yield 'jerry';
+        //     return '看看能不能终止';
+        //     yield '看看完了没有';
+
+        // }
+        
+        // const newName = getName();
+        // console.log(newName.next());
+        // console.log(newName.next());
+        // console.log(newName.next());
+        // console.log(newName.next());
+        // console.log(newName.next());
+        // for (let val of newName) {
+        //     console.log('val', val)
+        // }
+
+
+        let one = new Promise((resolve, reject) => {
+
+
+            setTimeout(resolve, 1000, '就不给你东西')
+            // resolve('你成功了没有');
+            // reject('不好意思，没能给你什么东西');
+        })
+        let two = new Promise((resolve, reject) => {
+            setTimeout(resolve, 1000, '给你点东西')
+            // resolve('你成功了没有');
+            // reject('不好意思，没能给你什么东西');
+        })
+
+        // one.then((value) => {
+        //     console.log('value', value);
+        // }, (value) => {
+        //     console.log('catch', value)
+        // })
+        // one.then((value) => {
+        //     console.log('value', value);
+        // })
+        
+
+        // Promise.race([two, one]).then((result) => {
+        //     console.log('result', result)
+        // })
+
+        function ajaxData({methods = 'GET', ...setting}, url = './list.json') {
+            let defaultSet = {
+                methods: methods,
+                ...setting
+            }
+            return new Promise((resolve, reject) => {
+                let xml = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+                xml.open(defaultSet.methods, url);
+                xml.send();
+                console.log('xml', xml)
+                xml.onreadystatechange = () => {
+                    if (xml.readyState === 4 && xml.status === 0) {
+                        setTimeout(() => resolve(JSON.parse(xml.responseText)), 2000);
+                    }
+                }
+            })
+        }
+        // ajaxData({}).then((res) => {
+        //     console.log(res, 'res')
+        //     let doms = `<ul>
+        //         ${
+        //             res.map((v, i) => {
+        //                 return `<li>${v}</li>`
+        //             }).join('')
+        //         }
+        //     </ul>`
+        //     document.body.innerHTML = doms
+        // })
+
+
+        function deplay() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => resolve('aaa'), 1000);
+            })
+        }
+
+        async function asyncFunc() {
+            const newData = await deplay();
+            console.log('newData', newData)
+            return newData
+        }
+        asyncFunc().then((val) => {
+            console.log('val外面', val)
+        });
+
+    </script>
+</body>
+</html>

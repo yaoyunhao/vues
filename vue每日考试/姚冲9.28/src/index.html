@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/index.css">
+    <link rel="stylesheet" href="./fonts2/iconfont.css">
+    <script src="./js/common/flexible.js"></script>
+    <script src="./js/common/jquery.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <i class="icon iconfont icon-xiangzuo"></i>
+            <span>购物车</span>
+            <span>编辑</span>
+        </header>
+        <section>
+            <div class="top">
+                <b></b>
+                <span>国美自营</span>
+            </div>
+            <div class="title">
+                <span>回复金额满79元包邮，部分地区满99元包邮</span>
+                <i class="icon iconfont icon-chevron-thin-right"></i>
+            </div>
+            <div class="alls">
+                <div class="all">
+                    <dl>
+                        <dt>
+                                    <img src="./img/1.jpg" alt="">
+                                </dt>
+                        <dd>
+                            <h1>三星(SAMSUNG) Gal axy N8(N9500)全网通 手机 星河蓝 6G+64G</h1>
+                            <span>64G 星河蓝</span>
+                            <div class="money">
+                                <b>￥6988.00</b>
+                                <p>
+                                    <span class="odd">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </p>
+                            </div>
+
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                                        <img src="./img/1.jpg" alt="">
+                                    </dt>
+                        <dd>
+                            <h1>三星(SAMSUNG) Gal axy N8(N9500)全网通 手机 星河蓝 6G+64G</h1>
+                            <span>64G 星河蓝</span>
+                            <div class="money">
+                                <b>￥6988.00</b>
+                                <p>
+                                    <span class="odd">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </p>
+                            </div>
+
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                                            <img src="./img/1.jpg" alt="">
+                                        </dt>
+                        <dd>
+                            <h1>三星(SAMSUNG) Gal axy N8(N9500)全网通 手机 星河蓝 6G+64G</h1>
+                            <span>64G 星河蓝</span>
+                            <div class="money">
+                                <b>￥6988.00</b>
+                                <p>
+                                    <span class="odd">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </p>
+                            </div>
+
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                                                <img src="./img/1.jpg" alt="">
+                                            </dt>
+                        <dd>
+                            <h1>三星(SAMSUNG) Gal axy N8(N9500)全网通 手机 星河蓝 6G+64G</h1>
+                            <span>64G 星河蓝</span>
+                            <div class="money">
+                                <b>￥6988.00</b>
+                                <p>
+                                    <span class="odd">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </p>
+                            </div>
+
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                                                    <img src="./img/1.jpg" alt="">
+                                                </dt>
+                        <dd>
+                            <h1>三星(SAMSUNG) Gal axy N8(N9500)全网通 手机 星河蓝 6G+64G</h1>
+                            <span>64G 星河蓝</span>
+                            <div class="money">
+                                <b>￥6988.00</b>
+                                <p>
+                                    <span class="odd">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </p>
+                            </div>
+
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                                                        <img src="./img/1.jpg" alt="">
+                                                    </dt>
+                        <dd>
+                            <h1>三星(SAMSUNG) Gal axy N8(N9500)全网通 手机 星河蓝 6G+64G</h1>
+                            <span>64G 星河蓝</span>
+                            <div class="money">
+                                <b>￥6988.00</b>
+                                <p>
+                                    <span class="odd">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </p>
+                            </div>
+
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script>
+        $('.add').on("click", function() {
+            var num = $(this).prev('span').html();
+            num++;
+            $(this).prev('span').html(num);
+        })
+        $('.odd').on("click", function() {
+            var num = $(this).next('span').html();
+            num--;
+            $(this).next('span').html(num);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+@import "_mixin.scss";
+@import "common.scss";
+#app {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    @include num(100%, 100%);
+    @include flexs;
+    flex-direction: column;
+}
+
+header {
+    @include num(100%, rem(44px));
+    text-align: center;
+    line-height: rem(44px);
+    color: #fff;
+    font-size: rem(20px);
+    background: red;
+}
+
+section {
+    flex: 1;
+    width: 100%;
+    @include box_flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.title {
+    @include num(100%, rem(44px));
+    font-size: rem(20px);
+    @include flexs;
+    justify-content: space-around;
+    border-bottom: 2px solid #ccc;
+    a {
+        color: #000;
+    }
+}
+
+.all {
+    @include num(100%, auto);
+    @include box_flex;
+    flex-direction: column;
+    margin-top: rem(10px);
+    dl {
+        @include num(100%, auto);
+        @include box_flex;
+        padding: rem(10px);
+        @include sizing;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        dt {
+            flex: 3;
+            img {
+                @include num(100%, auto);
+            }
+        }
+        dd {
+            padding-left: rem(20px);
+            @include sizing;
+            flex: 7;
+            @include box_flex;
+            justify-content: space-around;
+            flex-direction: column;
+            h1 {
+                font-size: rem(16px);
+                font-weight: 800;
+                line-height: 2;
+            }
+            p,
+            span,
+            h3 {
+                line-height: 2;
+            }
+        }
+        button {
+            @include num(rem(40px), rem(20px));
+            border: 0;
+            background: red;
+            font-size: rem(10px);
+            color: #fff;
+            line-height: rem(20px);
+            border-radius: rem(6px);
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.banner {
+    @include num(100%, rem(100px));
+    background: red;
+}
+
+footer {
+    @include num(100%, rem(44px));
+    border-top: 1px solid #ccc;
+    @include flexs;
+    padding: 0 rem(15px);
+    @include sizing;
+    font-size: rem(16px);
+    a {
+        color: #000;
+    }
+}

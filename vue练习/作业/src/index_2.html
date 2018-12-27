@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+    <script>
+        let [, ...one] = [1, 2, 3, 4]
+        // console.log(one);
+        let obj = {
+            name: 'tom',
+            school: {
+                yuan: '网站工程'
+            }
+        };
+        // let {
+        //     yuan
+        // } = {...obj.school};
+        // obj.school.yuan = '大数据'
+        // console.log(yuan);
+        // let {
+        //     school: {
+        //         yuan
+        //     },
+        //     school
+        // } = obj;
+        // console.log(school);
+        
+
+        function getArgu() {
+            // console.log(arguments);
+            // console.log(Array.from(arguments))
+        }
+        
+        let createArray = {
+            2: 3,
+            1: 2,
+            0: 1,
+            length: 3
+        }
+        // console.log(createArray.length)
+        // console.log(Array.from(createArray, (val) => {
+            // console.log(val)
+        //     return val * val
+        // }));
+        // getArgu(1, 2, 3, 4);
+
+
+        let lis = document.querySelectorAll('li');
+        // console.log(Array.from(lis, (val) => val.innerHTML))
+        
+
+        // console.log(Array(2));
+
+        // console.log(Array.of(2, 1), 'of');
+
+        for (let val of [1, 2, 3]) {
+            console.log(val, 'val')
+        }
+
+
+        const set = new Set([1, 2, 3, 4, 4]);
+
+        console.log(Array.from(set))
+        console.log([...set]);
+
+
+
+        // const newSet = new Set();
+        // newSet.add(1).add(2).add(1);
+        // newSet.delete(1);
+        // console.log(newSet.has(2));
+        // console.log([...newSet])
+
+        // const newSet = new Set();
+        // newSet.add({});
+        // newSet.add({});
+        // console.log(newSet.size)
+
+
+        // const newMap = new Map();
+
+        // newMap.set('a', 1).set('b', 2);
+
+
+        // console.log(newMap.get('a'))
+
+        // console.log('newMap', Array.from(newMap))
+
+        // console.log('keys', [...newMap.keys()])
+        // console.log('values', [...newMap.values()])
+        // console.log('entries', [...newMap.entries()])
+        // Array.from(newMap).forEach((v, i) => {
+        //     console.log('v', v)
+        // })
+
+        // const newMap = new Map([
+        //     ['name', '张三'],
+        //     ['title', 'Author']
+        // ]);
+        // console.log('newMap', [...newMap])
+
+        // console.log(Object.entries({
+        //     a: 1,
+        //     b: 2
+        // }), 'entries')
+        // let arr = Object.entries({
+        //     a: 1,
+        //     b: 2
+        // })
+        // for (let [one, two] of arr) {
+        //     console.log(one, 'val', two)
+        // }
+
+
+    </script>
+</body>
+</html>

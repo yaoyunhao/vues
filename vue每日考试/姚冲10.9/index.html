@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./js/swiper/css/swiper-4.1.6.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+        }
+        
+        .swiper-container img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/01.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/02.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/03.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/04.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/05.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./js/swiper/js/swiper-4.1.6.min.js"></script>
+    <script>
+        new Swiper('.swiper-container', {
+            autoplay: true
+        })
+    </script>
+</body>
+
+</html>

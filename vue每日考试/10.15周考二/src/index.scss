@@ -1,0 +1,38 @@
+@import "_mixin.scss";
+@import "common.scss";
+.wrap {
+    @include num(100%, 100%);
+    @include box_flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    @include num(100%, rem(80px));
+    @include flexs;
+    padding: 0 rem(20px);
+    @include sizing;
+    background: red;
+}
+
+section {
+    flex: 1;
+    @include box_flex;
+    overflow-y: auto;
+}
+
+.top {
+    @include num(100%, rem(200px));
+    background: blue;
+    padding: 0 rem(25px);
+    h1 {
+        margin-top: rem(20px);
+        font-size: 60px;
+        color: #fff;
+    }
+    p {
+        margin-top: rem(30px);
+        @include flexs;
+        color: #fff;
+    }
+}

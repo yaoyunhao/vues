@@ -1,0 +1,23 @@
+.list {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.listli {
+    background: red;
+    border: 1px solid #000;
+}
+
+.listlip {
+    color: #fff;
+    text-indent: 10px;
+    line-height: 40px
+}
+
+.listliolli {
+    height: 40px;
+    text-indent: 10px;
+    border: 1px dashed #000;
+    line-height: 40px;
+    background: blue;
+}

@@ -1,0 +1,137 @@
+    @import "_mixin.scss";
+    @import "common.scss";
+    .wrap {
+        @include num(100%, 100%);
+        @include box_flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    header {
+        @include num(100%, rem(80px));
+        background: #ccc;
+        @include flexs;
+        padding: 0 rem(10px);
+        @include sizing;
+        span {
+            font-size: rem(18px);
+            cursor: pointer;
+            &:nth-child(1) {
+                color: red;
+            }
+        }
+    }
+    
+    section {
+        flex: 1;
+        @include box_flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    
+    .all {
+        @include num(100%, 100%);
+        @include box_flex;
+        flex-direction: column;
+        dl {
+            @include num(100%, auto);
+            @include box_flex;
+            padding: rem(20px);
+            @include sizing;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            dd {
+                @include num(90%, auto);
+                margin-left: rem(10px);
+                @include box_flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .author {
+                    @include num(40%, auto);
+                    @include flexs;
+                    font-size: rem(30px);
+                }
+                p {
+                    @include ntext(2);
+                    font-size: rem(30px);
+                }
+            }
+            .right {
+                @include num(40%, auto);
+                @include box_flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0 rem(30px);
+                @include sizing;
+                p {
+                    @include flexs;
+                    font-size: rem(30px);
+                    span {
+                        border: 1px solid #ccc;
+                        padding: rem(5px) rem(20px);
+                        @include sizing;
+                        cursor: pointer;
+                        &:nth-of-type(1) {
+                            background: red;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .detail {
+        @include num(100%, 100%);
+        dl {
+            @include num(100%, auto);
+            @include box_flex;
+            padding: rem(20px);
+            @include sizing;
+            dd {
+                margin-left: rem(20px);
+                @include box_flex;
+                justify-content: space-around;
+                flex-direction: column;
+                div {
+                    @include box_flex;
+                    h1 {
+                        line-height: 2;
+                        font-size: rem(30px);
+                        font-weight: 800;
+                    }
+                    h2 {
+                        font-size: rem(20px);
+                        margin-left: rem(20px);
+                        line-height: 3.5;
+                    }
+                }
+                .tags {
+                    span {
+                        font-size: rem(18px);
+                        padding: 0 rem(20px);
+                        border: 1px solid #ccc;
+                        border-radius: 6px;
+                        margin-left: 8px;
+                    }
+                }
+                p {
+                    width: 65%;
+                    @include ntext(1);
+                    font-size: rem(30px);
+                }
+            }
+        }
+    }
+    
+    .title {
+        span {
+            padding: 0 rem(20px);
+            @include sizing;
+        }
+    }
+    
+    .summary {
+        margin-top: rem(30px);
+        padding: 0 rem(20px);
+    }

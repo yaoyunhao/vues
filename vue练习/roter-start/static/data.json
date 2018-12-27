@@ -1,0 +1,41 @@
+[{
+        "id": "1",
+        "url": "https://p1.meituan.net/128.180/movie/740bd990e4af29d537ce324ec2cd08d6300433.jpg",
+        "name": "无双",
+        "msg": "今天205家影院放映2226场",
+        "remark": "观众评价8.9",
+        "protagonist": ["周润发 ", "郭富城 ", "张静初"]
+    },
+    {
+        "id": "2",
+        "url": "https://p1.meituan.net/128.180/movie/2d87ab306c35597e54c7db8b91a9ef24919410.jpg",
+        "name": "宝贝儿",
+        "remark": "30928人想看",
+        "msg": "2018-10-19 本周五上映",
+        "protagonist": ["杨幂 ", "郭京飞 ", "李红旗"]
+    },
+    {
+        "id": "3",
+        "url": "https://p0.meituan.net/128.180/movie/238de53af8fd65ed76fea870cfc6a260287400.jpg",
+        "name": "我的间谍前男友",
+        "remark": "30928人想看",
+        "msg": "2018-10-19 本周五上映",
+        "protagonist": ["米卡 ", "凯特 ", "迈克尔"]
+    },
+    {
+        "id": "4",
+        "url": "https://p1.meituan.net/128.180/movie/cac9e6514044986747204c41c0a89f4e725343.jpg",
+        "name": "影",
+        "remark": "观众评8.2",
+        "msg": "今天205家影院放映1333场",
+        "protagonist": ["邓超 ", "孙俪 ", "郑凯"]
+    },
+    {
+        "id": "5",
+        "url": "https://p0.meituan.net/128.180/movie/4d9bedd239f41eaf08cd1c4297e4ec7d858156.jpg",
+        "name": "找到你",
+        "remark": "观众评9.0",
+        "msg": "今天109家影院放映1333场",
+        "protagonist": ["姚晨 ", "马伊琍 ", "袁利康"]
+    }
+]

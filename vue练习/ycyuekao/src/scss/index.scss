@@ -1,0 +1,132 @@
+@import "_mixin.scss";
+@import 'common.scss';
+#app {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    @include num(100%, 100%);
+    @include box_flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    @include num(100%, rem(44px));
+    @include flexs;
+    padding: 0 rem(10px);
+    @include sizing;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    p {
+        span {
+            font-size: rem(16px);
+            color: skyblue;
+        }
+    }
+}
+
+section {
+    flex: 1;
+    @include box_flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.bg {
+    @include num(100%, 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    img {
+        @include num(100%, 100%);
+    }
+}
+
+.left {
+    @include flexs;
+    flex-direction: column;
+    position: fixed;
+    right: rem(30px);
+    top: 20%;
+    img {
+        @include cir(rem(40px));
+    }
+    span {
+        margin-top: rem(10px);
+        background: #fff;
+        @include cir(rem(40px));
+        text-align: center;
+        cursor: pointer;
+        line-height: rem(40px);
+    }
+}
+
+.list {
+    @include num(100%, auto);
+    background: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    .title {
+        @include num(100%, rem(30px));
+        @include flexs;
+        padding: 0 rem(10px);
+        @include sizing;
+    }
+    ul {
+        @include num(100%, auto);
+        li {
+            @include num(100%, rem(60px));
+            @include flexs;
+            padding: 0 rem(10px);
+            @include sizing;
+            .imgs {
+                @include cir(rem(30px));
+                background: #fff;
+            }
+            p {
+                flex: 1;
+                @include box_flex;
+                flex-direction: column;
+                margin-left: rem(20px);
+            }
+        }
+    }
+    .discuss {
+        @include num(100%, auto);
+        @include flexs;
+        padding: 0 rem(10px);
+        @include sizing;
+        input {
+            @include num(60%, rem(40px));
+            text-indent: rem(20px);
+            color: #fff;
+        }
+        button {
+            @include num(40%, rem(30px));
+            border: 0;
+            background: skyblue;
+            font-size: rem(14px);
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    @include num(100%, rem(44px));
+    @include flexs;
+    padding: 0 rem(10px);
+    @include sizing;
+    font-size: rem(16px);
+    color: skyblue;
+}

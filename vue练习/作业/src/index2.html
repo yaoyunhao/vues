@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Cash {
+            static add(obj_1, obj_2) {
+                let newNumber = obj_1.number + obj_2.number;
+                let arr = newNumber.toString().split('')
+                return `${arr[0]}元${arr[1]}角${arr[2]}分`
+            }
+            constructor(number) {
+                this.number = number;
+            }
+            add(obj) {
+                let newNumber = this.number + obj.number;
+                let arr = newNumber.toString().split('');
+                return `${arr[0]}元${arr[1]}角${arr[2]}分`
+            }
+            toString() {
+                let arr = this.number.toString().split('')
+                return `${arr[0]}元${arr[1]}角${arr[2]}分`
+            }
+            valueOf() {
+                return this.number
+            }
+        }
+    </script>
+</body>
+
+</html>

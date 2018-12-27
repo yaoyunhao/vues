@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            name: "张三",
+            sex: "男",
+            age: 18,
+            from: "1606A"
+        };
+        // let newObj = JSON.parse(JSON.stringify(obj));
+        // newObj.name = "李四";
+        // let objs = {...newObj
+        // };
+        // let arr = [1, 2, 3];
+        // let [...one] = arr;
+        // let {
+        //     name,
+        //     sex,
+        //     age
+        // } = obj;
+        // console.log(name, sex, age);
+        // let [a, b, c] = arr;
+        // console.log(a, b, c);
+        // console.log(one);
+        // console.log(objs);
+        // console.log(newObj);
+        // console.log(obj);
+        // var les=()=>{
+        // 	console.log('asd');
+        // }
+        // les();
+        // let obj2={
+        // 	name:"zs",
+        // 	schll:{
+        // 		scrolla:"1606A"
+        // 	}
+        // }
+        // let obj1={
+        // 	age:12
+        // }
+        // let newArr={
+        // 	...obj2,
+        // 	...obj1,
+        // 	schll:obj2.schll
+        // }
+        //let newArr=Object.assign({},obj2,obj1);
+        // console.log(newArr)
+    //     let arr=["床前明月光",'疑是地上霜',"举头望明月","低头思故乡"];
+    //     let random = `<ul>${arr.map(function(item){
+    //     	return `<li>${item}</li>`
+    //     }).join('')
+    // }</ul>`;
+    //     document.body.innerHTML=random
+    //   console.log(Object.values(obj))
+    //   var lis=document.querySelectorAll('li');
+    //   for(let i=0;i<lis.length;i++){
+    //   	lis[i].onclick=function(){
+    //   		console.log(i);
+    //   		console.log(this.innerHTML)
+    //   	}
+    //   }
+     //  function* getName(){
+     //  	yield 'tom';
+     //  	yield 'num';
+     //  	yield 'jerry';
+     //  }
+     //  let fn=getName();
+     //  console.log(fn.next());
+     //  console.log(fn.next());
+     //  console.log(fn.next());
+     //  console.log(fn.next());
+     // let one = new Promise((resolve,reject)=>{
+     // 	 resolve('asd');
+     // 	 reject('bcd');
+     // });
+     // one.then((res)=>{
+     // 	console.log(res)
+     // }).catch((error)=>{
+     // 	console.log(error)
+     // })
+     function ajax(url){
+     	return new Promise((resolve,reject)=>{
+     	let xml = new XMLHttpRequest();
+     	xml.open('get',url,true);
+     	xml.send();
+     	xml.onreadystatechange=function(){
+     		if(xml.status === 0&& xml.readyState === 4){
+     			return resolve(JSON.parse(xml.responseText))
+     		}
+     	}
+     	})
+     }
+     ajax('index.json').then((res)=>{
+         console.log(res)
+     })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+[{
+        "name": "越南紫薯400g",
+        "msg": "个儿娇小 甜糯超过你想像",
+        "count": 0,
+        "price": "3.8",
+        "id": 1,
+        "status": true,
+        "url": "http://localhost:8080/static/img/1.jpg"
+    },
+    {
+        "name": "烟台富士苹果",
+        "msg": "天生耿直boy 让你一口脆到底",
+        "count": 0,
+        "price": "4.8",
+        "status": true,
+        "url": "http://localhost:8080/static/img/2.jpg",
+        "id": 2
+    },
+    {
+        "name": "新疆红提500g",
+        "msg": "伊犁井水浇灌的",
+        "price": "3.2",
+        "count": 0,
+        "status": true,
+        "url": "http://localhost:8080/static/img/3.jpg",
+        "id": 3
+    },
+    {
+        "name": "新希望纯牛奶",
+        "msg": "空虚时 急需一杯新希望",
+        "price": "12.8",
+        "count": 0,
+        "status": true,
+        "url": "http://localhost:8080/static/img/4.jpg",
+        "id": 4
+    },
+    {
+        "name": "黄心土豆",
+        "msg": "贼黄",
+        "price": "3.23",
+        "count": 0,
+        "status": true,
+        "url": "http://localhost:8080/static/img/5.jpg",
+        "id": 5
+    }
+]
